@@ -1,0 +1,394 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CustomComponents
+LIBS:SparkFun-Aesthetics
+LIBS:SparkFun-Batteries
+LIBS:SparkFun-Boards
+LIBS:SparkFun-Capacitors
+LIBS:SparkFun-Clocks
+LIBS:SparkFun-Coils
+LIBS:SparkFun-Connectors
+LIBS:SparkFun-DiscreteSemi
+LIBS:SparkFun-Displays
+LIBS:SparkFun-Electromechanical
+LIBS:SparkFun-Fuses
+LIBS:SparkFun-GPS
+LIBS:SparkFun-Hardware
+LIBS:SparkFun-IC-Amplifiers
+LIBS:SparkFun-IC-Comms
+LIBS:SparkFun-IC-Conversion
+LIBS:SparkFun-IC-Logic
+LIBS:SparkFun-IC-Memory
+LIBS:SparkFun-IC-Microcontroller
+LIBS:SparkFun-IC-Power
+LIBS:SparkFun-IC-Special-Function
+LIBS:SparkFun-Jumpers
+LIBS:SparkFun-LED
+LIBS:SparkFun-PowerSymbols
+LIBS:SparkFun-Resistors
+LIBS:SparkFun-RF
+LIBS:SparkFun-Sensors
+LIBS:SparkFun-Switches
+LIBS:w_analog
+LIBS:w_microcontrollers
+LIBS:w_transistor
+LIBS:w_connectors
+LIBS:w_memory
+LIBS:w_rtx
+LIBS:w_logic
+LIBS:w_opto
+LIBS:w_vacuum
+LIBS:w_device
+LIBS:w_relay
+LIBS:w_power
+LIBS:usb_keyboard_light-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LTC6992 U1
+U 1 1 5A714535
+P 7550 2950
+F 0 "U1" H 7750 2350 60  0000 C CNN
+F 1 "LTC6992" H 7750 3000 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 7550 2950 60  0001 C CNN
+F 3 "" H 7550 2950 60  0001 C CNN
+	1    7550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5A7145E7
+P 7100 3300
+F 0 "#PWR01" H 7100 3050 50  0001 C CNN
+F 1 "GND" H 7100 3150 50  0000 C CNN
+F 2 "" H 7100 3300 50  0001 C CNN
+F 3 "" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_SPST SW1
+U 1 1 5A71461D
+P 7680 1760
+F 0 "SW1" H 7680 1885 50  0000 C CNN
+F 1 "SW_SPST" H 7680 1660 50  0000 C CNN
+F 2 "CustomFP:SWITCH_SPDT_PTH" H 7680 1760 50  0001 C CNN
+F 3 "" H 7680 1760 50  0001 C CNN
+	1    7680 1760
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A71465C
+P 8350 3200
+F 0 "C2" H 8350 3100 50  0000 L CNN
+F 1 "0.1uF" H 8100 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8388 3050 50  0001 C CNN
+F 3 "" H 8350 3200 50  0001 C CNN
+	1    8350 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5A714689
+P 8350 3400
+F 0 "R6" V 8430 3400 50  0000 C CNN
+F 1 "R" V 8350 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8280 3400 50  0001 C CNN
+F 3 "" H 8350 3400 50  0001 C CNN
+	1    8350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L VDD #PWR02
+U 1 1 5A714823
+P 8200 3200
+F 0 "#PWR02" H 8200 3050 50  0001 C CNN
+F 1 "VDD" H 8200 3350 50  0000 C CNN
+F 2 "" H 8200 3200 50  0001 C CNN
+F 3 "" H 8200 3200 50  0001 C CNN
+	1    8200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A714A2C
+P 8500 3200
+F 0 "#PWR03" H 8500 2950 50  0001 C CNN
+F 1 "GND" H 8500 3050 50  0000 C CNN
+F 2 "" H 8500 3200 50  0001 C CNN
+F 3 "" H 8500 3200 50  0001 C CNN
+	1    8500 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5A714AB8
+P 8200 3550
+F 0 "R5" V 8280 3550 50  0000 C CNN
+F 1 "R" V 8200 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8130 3550 50  0001 C CNN
+F 3 "" H 8200 3550 50  0001 C CNN
+	1    8200 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR04
+U 1 1 5A714C3A
+P 8500 3400
+F 0 "#PWR04" H 8500 3250 50  0001 C CNN
+F 1 "VDD" H 8500 3550 50  0000 C CNN
+F 2 "" H 8500 3400 50  0001 C CNN
+F 3 "" H 8500 3400 50  0001 C CNN
+	1    8500 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5A714DB4
+P 8200 3700
+F 0 "#PWR05" H 8200 3450 50  0001 C CNN
+F 1 "GND" H 8200 3550 50  0000 C CNN
+F 2 "" H 8200 3700 50  0001 C CNN
+F 3 "" H 8200 3700 50  0001 C CNN
+	1    8200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A714E6D
+P 7350 3550
+F 0 "R3" V 7430 3550 50  0000 C CNN
+F 1 "R" V 7350 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7280 3550 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+	1    7350 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5A714EA8
+P 7350 4050
+F 0 "#PWR06" H 7350 3800 50  0001 C CNN
+F 1 "GND" H 7350 3900 50  0000 C CNN
+F 2 "" H 7350 4050 50  0001 C CNN
+F 3 "" H 7350 4050 50  0001 C CNN
+	1    7350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5A715094
+P 7880 1860
+F 0 "#PWR07" H 7880 1610 50  0001 C CNN
+F 1 "GND" H 7880 1710 50  0000 C CNN
+F 2 "" H 7880 1860 50  0001 C CNN
+F 3 "" H 7880 1860 50  0001 C CNN
+	1    7880 1860
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A715186
+P 6550 2650
+F 0 "R2" V 6630 2650 50  0000 C CNN
+F 1 "R" V 6550 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6480 2650 50  0001 C CNN
+F 3 "" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VDD #PWR08
+U 1 1 5A715304
+P 6050 2650
+F 0 "#PWR08" H 6050 2500 50  0001 C CNN
+F 1 "VDD" H 6050 2800 50  0000 C CNN
+F 2 "" H 6050 2650 50  0001 C CNN
+F 3 "" H 6050 2650 50  0001 C CNN
+	1    6050 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A715607
+P 6200 2650
+F 0 "R1" V 6280 2650 50  0000 C CNN
+F 1 "R" V 6200 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6130 2650 50  0001 C CNN
+F 3 "" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 2650 6400 2650
+$Comp
+L R R4
+U 1 1 5A715AC2
+P 7350 3900
+F 0 "R4" V 7430 3900 50  0000 C CNN
+F 1 "R" V 7350 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7280 3900 50  0001 C CNN
+F 3 "" H 7350 3900 50  0001 C CNN
+	1    7350 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 3750 7350 3700
+$Comp
+L R R7
+U 1 1 5A715EE5
+P 8960 3220
+F 0 "R7" V 9040 3220 50  0000 C CNN
+F 1 "R" V 8960 3220 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8890 3220 50  0001 C CNN
+F 3 "" H 8960 3220 50  0001 C CNN
+	1    8960 3220
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5A7160D4
+P 8960 3670
+F 0 "#PWR09" H 8960 3420 50  0001 C CNN
+F 1 "GND" H 8960 3520 50  0000 C CNN
+F 2 "" H 8960 3670 50  0001 C CNN
+F 3 "" H 8960 3670 50  0001 C CNN
+	1    8960 3670
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A716344
+P 8960 3520
+F 0 "D1" H 8960 3620 50  0000 C CNN
+F 1 "LED" H 8960 3420 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 8960 3520 50  0001 C CNN
+F 3 "" H 8960 3520 50  0001 C CNN
+	1    8960 3520
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 3000 8960 3000
+$Comp
+L POTENTIOMETER_SLIDE-30MM-1_10W-20% VR1
+U 1 1 5A717F52
+P 7100 2650
+F 0 "VR1" V 7050 2350 45  0000 L BNN
+F 1 "POT_SLIDE-30MM" V 7350 2350 45  0000 L BNN
+F 2 "CustomFP:slidingPot" V 6950 2650 20  0001 C CNN
+F 3 "" H 7100 2650 60  0001 C CNN
+F 4 "RES-11931" V 6900 2650 60  0000 C CNN "Field4"
+	1    7100 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5A71A20B
+P 8080 1760
+F 0 "J1" H 8080 1860 50  0000 C CNN
+F 1 "Conn_01x02" H 8080 1560 50  0000 C CNN
+F 2 "CustomFP:USBC_breakout" H 8080 1760 50  0001 C CNN
+F 3 "" H 8080 1760 50  0001 C CNN
+	1    8080 1760
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5A74B601
+P 7400 2650
+F 0 "#PWR010" H 7400 2400 50  0001 C CNN
+F 1 "GND" H 7400 2500 50  0000 C CNN
+F 2 "" H 7400 2650 50  0001 C CNN
+F 3 "" H 7400 2650 50  0001 C CNN
+	1    7400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2850 7100 3000
+Wire Wire Line
+	7100 3000 7350 3000
+$Comp
+L VDD #PWR011
+U 1 1 5A74BC73
+P 7480 1760
+F 0 "#PWR011" H 7480 1610 50  0001 C CNN
+F 1 "VDD" H 7480 1910 50  0000 C CNN
+F 2 "" H 7480 1760 50  0001 C CNN
+F 3 "" H 7480 1760 50  0001 C CNN
+	1    7480 1760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2650 6800 2650
+Wire Wire Line
+	8960 3000 8960 3070
+$Comp
+L C C1
+U 1 1 5ABB1A1B
+P 7100 3150
+F 0 "C1" H 7100 3050 50  0000 L CNN
+F 1 "0.1uF" H 6850 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7138 3000 50  0001 C CNN
+F 3 "" H 7100 3150 50  0001 C CNN
+	1    7100 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 3300 7350 3300
+Wire Wire Line
+	7350 3300 7350 3200
+Text Label 8580 3000 0    60   ~ 0
+LED_drive
+Wire Notes Line
+	8520 2170 7340 2170
+Wire Notes Line
+	7340 2170 7350 1470
+Wire Notes Line
+	7350 1470 8510 1470
+Wire Notes Line
+	8510 1470 8510 2150
+$EndSCHEMATC

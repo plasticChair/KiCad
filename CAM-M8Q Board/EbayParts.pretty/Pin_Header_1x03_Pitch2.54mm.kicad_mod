@@ -1,0 +1,18 @@
+(module Pin_Header_1x03_Pitch2.54mm (layer F.Cu) (tedit 59B8BA58)
+  (descr "Through hole angled pin header, 1x03, 2.54mm pitch, 6mm pin length, single row")
+  (tags "Through hole angled pin header THT 1x03 2.54mm single row")
+  (fp_text reference BLE_PWR_Switch (at -1.9812 1.8796 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value BLE_PWR_Switch (at -2.032 3.048 90) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole rect (at 0 0) (size 1.6 1.7) (drill 1.1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 0 2.54) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask))
+  (pad 3 thru_hole circle (at 0 5.08) (size 1.6 1.6) (drill 1.1) (layers *.Cu *.Mask))
+  (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Angled_1x03_Pitch2.54mm.wrl
+    (at (xyz 0 -0.1 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
+)
