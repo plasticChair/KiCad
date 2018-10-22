@@ -1,0 +1,131 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+ALLEGRO_ACS70331EESATR-005U3
+$EndINDEX
+$MODULE ALLEGRO_ACS70331EESATR-005U3
+Po 0 0 0 15 00000000 00000000 ~~
+Li ALLEGRO_ACS70331EESATR-005U3
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.46081 -3.64144 1.00177 1.00177 0 0.05 N V 21 "ALLEGRO_ACS70331EESATR-005U3"
+T1 0.17533 3.64187 1.00189 1.00189 0 0.05 N V 21 "VAL**"
+DS -1.5 -1.5 1.5 -1.5 0.1524 24
+DS 1.5 -1.5 1.5 1.5 0.1524 24
+DS 1.5 1.5 -1.5 1.5 0.1524 24
+DS -1.5 1.5 -1.5 -1.5 0.1524 24
+DS -1.5 -1.2 -1.5 -1.5 0.1524 21
+DS -1.5 -1.5 -0.3 -1.5 0.1524 21
+DS 1.1 -1.5 1.5 -1.5 0.1524 21
+DS 1.5 -1.5 1.5 -1.2 0.1524 21
+DS -1.5 1.2 -1.5 1.5 0.1524 21
+DS -1.5 1.5 -0.3 1.5 0.1524 21
+DS 1.1 1.5 1.5 1.5 0.1524 21
+DS 1.5 1.5 1.5 1.2 0.1524 21
+DC -2.5 -0.7 -2.425 -0.7 0.15 21
+DS -2.25 -2.125 2.025 -2.125 0.05 26
+DS 2.025 -2.125 2.025 2.2 0.05 26
+DS 2.025 2.2 -2.25 2.2 0.05 26
+DS -2.25 2.2 -2.25 -2.125 0.05 26
+$PAD
+Sh "1" R 1.3 0.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.35 -0.7
+$EndPAD
+$PAD
+Sh "3" R 1.3 0.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.35 0.3
+$EndPAD
+$PAD
+Sh "5" R 0.85 0.3 0 0 2700
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.15 1.45
+$EndPAD
+$PAD
+Sh "6" R 0.85 0.3 0 0 2700
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.65 1.45
+$EndPAD
+$PAD
+Sh "7" R 0.85 0.3 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.35 0.75
+$EndPAD
+$PAD
+Sh "8" R 0.85 0.3 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.35 0.25
+$EndPAD
+$PAD
+Sh "9" R 0.85 0.3 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.35 -0.25
+$EndPAD
+$PAD
+Sh "10" R 0.85 0.3 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.35 -0.75
+$EndPAD
+$PAD
+Sh "11" R 0.85 0.3 0 0 2700
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.65 -1.45
+$EndPAD
+$PAD
+Sh "12" R 0.85 0.3 0 0 2700
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.15 -1.45
+$EndPAD
+$PAD
+Sh "2" R 1.3 0.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.35 -0.3
+$EndPAD
+$PAD
+Sh "4" R 1.3 0.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.35 0.7
+$EndPAD
+$EndMODULE ALLEGRO_ACS70331EESATR-005U3

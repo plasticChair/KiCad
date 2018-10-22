@@ -1,0 +1,102 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+TRANS_SIRA90DP-T1-GE3
+$EndINDEX
+$MODULE TRANS_SIRA90DP-T1-GE3
+Po 0 0 0 15 00000000 00000000 ~~
+Li TRANS_SIRA90DP-T1-GE3
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 0.35331 -3.97243 1.52029 1.52029 0 0.05 N V 21 "TRANS_SIRA90DP-T1-GE3"
+T1 1.30709 4.04661 1.5161 1.5161 0 0.05 N V 21 "VAL**"
+DS -3.075 -2.575 -3.075 2.575 0.127 24
+DS -3.075 2.575 3.075 2.575 0.127 24
+DS 3.075 2.575 3.075 -2.575 0.127 24
+DS 3.075 -2.575 -3.075 -2.575 0.127 24
+DS -3.55 -2.874 -3.55 2.834 0.05 26
+DS -3.55 2.834 3.55 2.854 0.05 26
+DS 3.55 2.854 3.55 -2.854 0.05 26
+DS 3.55 -2.854 -3.55 -2.874 0.05 26
+DC -4.03 -1.92 -3.87 -1.92 0.3 21
+DS -3.075 -2.575 3.075 -2.575 0.127 21
+DS -3.075 2.575 3.075 2.575 0.127 21
+DC -4.03 -1.92 -3.87 -1.92 0.3 24
+$PAD
+Sh "1" R 1.27 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.67 -1.905
+$EndPAD
+$PAD
+Sh "2" R 1.27 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.67 -0.635
+$EndPAD
+$PAD
+Sh "3" R 1.27 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.67 0.635
+$EndPAD
+$PAD
+Sh "4" R 1.27 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.67 1.905
+$EndPAD
+$PAD
+Sh "5" R 1.02 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.795 1.905
+$EndPAD
+$PAD
+Sh "6" R 1.02 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.795 0.635
+$EndPAD
+$PAD
+Sh "7" R 1.02 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.795 -0.635
+$EndPAD
+$PAD
+Sh "8" R 1.02 0.61 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.795 -1.905
+$EndPAD
+$PAD
+Sh "9" R 3.81 3.91 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.69 0
+$EndPAD
+$EndMODULE TRANS_SIRA90DP-T1-GE3

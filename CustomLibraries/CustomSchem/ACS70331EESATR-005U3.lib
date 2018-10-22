@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ACS70331EESATR-005U3
+#
+DEF ACS70331EESATR-005U3 U 0 40 Y Y 1 L N
+F0 "U" -401 440 50 H V L BNN
+F1 "ACS70331EESATR-005U3" -401 -559 50 H V L BNN
+F2 "ALLEGRO_ACS70331EESATR-005U3" 0 0 50 H I L BNN
+F3 "WFQFN-12 Allegro MicroSystems LLC" 0 0 50 H I L BNN
+F4 "Allegro MicroSystems LLC" 0 0 50 H I L BNN
+F5 "ACS70331EESATR-005U3" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "High Sensitivity, 1 Mhz, Gmr-Bas" 0 0 50 H I L BNN
+F8 "Unavailable" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -400 400 400 400 N
+P 2 0 0 16 400 400 400 -400 N
+P 2 0 0 16 400 -400 -400 -400 N
+P 2 0 0 16 -400 -400 -400 400 N
+X IP- 3 -600 -100 200 R 40 40 0 0 I 
+X IP- 4 -600 -100 200 R 40 40 0 0 I 
+X IP+ 1 -600 100 200 R 40 40 0 0 I 
+X IP+ 2 -600 100 200 R 40 40 0 0 I 
+X GND 5 600 -300 200 L 40 40 0 0 W 
+X VCC 12 600 300 200 L 40 40 0 0 W 
+X VIOUT 10 600 0 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library

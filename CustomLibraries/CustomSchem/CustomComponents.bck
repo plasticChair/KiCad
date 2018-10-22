@@ -1,7 +1,34 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BQ21040
+D 1-Cell Li-Ion Charger
+$ENDCMP
+#
+$CMP BQ27750
+D 1 Cell Gas Guage and Protection
+K 1 Cell Gas Guage and Protection
+F 1 Cell Gas Guage and Protection
+$ENDCMP
+#
+$CMP CEM9926A
+D Dual N-MOSFET
+K Dual N-MOSFET
+$ENDCMP
+#
 $CMP Conn_01x01
 D Generic connector, single row, 01x01
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x02
+D Generic connector, single row, 01x02
+K connector
+F ~
+$ENDCMP
+#
+$CMP touchLCD
+D Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP
