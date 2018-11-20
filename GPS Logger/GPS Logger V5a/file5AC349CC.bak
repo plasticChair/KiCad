@@ -486,6 +486,8 @@ Wire Wire Line
 Wire Wire Line
 	5900 4050 6000 4050
 Wire Wire Line
+	6000 4050 6000 4250
+Wire Wire Line
 	6300 3900 6400 3900
 Wire Wire Line
 	6400 3900 6400 4250
@@ -522,9 +524,11 @@ F 3 "~" H 5000 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L EbayParts:APM4953 U5
+L GPSLogger-rescue:APM4953-EbayParts U5
 U 1 1 5BC171BF
 P 5500 2250
+AR Path="/5BC171BF" Ref="U5"  Part="1" 
+AR Path="/5AC349CD/5BC171BF" Ref="U5"  Part="1" 
 F 0 "U5" H 5750 2697 60  0000 C CNN
 F 1 "APM4953" H 5750 2591 60  0000 C CNN
 F 2 "EbayParts:SOIC-8-N" H 5750 2900 60  0001 C CNN
@@ -563,7 +567,7 @@ F 1 "LED_B" V 5947 4283 50  0000 R CNN
 F 2 "LEDs:LED_0805" H 6000 4400 50  0001 C CNN
 F 3 "~" H 6000 4400 50  0001 C CNN
 	1    6000 4400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R2
@@ -587,7 +591,7 @@ F 1 "LED_G" V 6347 4283 50  0000 R CNN
 F 2 "LEDs:LED_0805" H 6400 4400 50  0001 C CNN
 F 3 "~" H 6400 4400 50  0001 C CNN
 	1    6400 4400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R3
@@ -609,7 +613,7 @@ F 1 "LED_R" V 6747 4283 50  0000 R CNN
 F 2 "LEDs:LED_0805" H 6800 4400 50  0001 C CNN
 F 3 "~" H 6800 4400 50  0001 C CNN
 	1    6800 4400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R4
@@ -631,7 +635,7 @@ F 1 "LED_O" V 7247 4283 50  0000 R CNN
 F 2 "LEDs:LED_0805" H 7300 4400 50  0001 C CNN
 F 3 "~" H 7300 4400 50  0001 C CNN
 	1    7300 4400
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R5
@@ -742,7 +746,7 @@ L Connector:Conn_01x02_Male J7
 U 1 1 5BC1ECA6
 P 8850 2350
 F 0 "J7" H 8823 2230 50  0000 R CNN
-F 1 "BTN1" H 8823 2321 50  0000 R CNN
+F 1 "BTN2" H 8823 2321 50  0000 R CNN
 F 2 "EbayParts:Tact_SMD_Switch" H 8850 2350 50  0001 C CNN
 F 3 "~" H 8850 2350 50  0001 C CNN
 	1    8850 2350
@@ -787,7 +791,7 @@ L Connector:Conn_01x02_Male J8
 U 1 1 5BC1FBA8
 P 8850 3250
 F 0 "J8" H 8823 3130 50  0000 R CNN
-F 1 "BTN1" H 8823 3221 50  0000 R CNN
+F 1 "BTN3" H 8823 3221 50  0000 R CNN
 F 2 "EbayParts:Tact_SMD_Switch" H 8850 3250 50  0001 C CNN
 F 3 "~" H 8850 3250 50  0001 C CNN
 	1    8850 3250
@@ -829,6 +833,4 @@ F 3 "" H 10050 2350 50  0001 C CNN
 	1    10050 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 4050 6000 4250
 $EndSCHEMATC

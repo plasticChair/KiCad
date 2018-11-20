@@ -2796,10 +2796,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 3300 8350 3300
 Wire Wire Line
-	7600 3600 7600 3650
-Wire Wire Line
-	7300 3650 7300 3600
-Wire Wire Line
 	7600 3300 7600 3100
 Wire Wire Line
 	7600 3100 8350 3100
@@ -2808,21 +2804,11 @@ Wire Wire Line
 Wire Wire Line
 	7300 3000 7300 3300
 Wire Wire Line
-	7950 3550 7950 3650
-Connection ~ 7950 3650
-Wire Wire Line
-	7950 3250 7950 3200
-Wire Wire Line
-	7950 3200 8350 3200
-Wire Wire Line
 	8350 2900 8150 2900
 Wire Wire Line
 	8150 2600 8150 2900
-Connection ~ 8150 3650
 Wire Wire Line
 	8300 4400 7900 4400
-Wire Wire Line
-	7600 3650 7950 3650
 Wire Wire Line
 	6150 3650 7100 3650
 Text Notes 7000 2000 0    60   ~ 0
@@ -2837,7 +2823,6 @@ Wire Wire Line
 	7100 2250 7100 2400
 Wire Wire Line
 	7100 2700 7100 3650
-Connection ~ 7100 3650
 Wire Wire Line
 	7000 2150 7300 2150
 Wire Wire Line
@@ -2868,14 +2853,10 @@ Text GLabel 5850 2050 0    60   Input ~ 0
 USBPwr
 Text GLabel 6150 3650 0    60   Input ~ 0
 BattRtn
-Text GLabel 7600 4250 0    60   Input ~ 0
+Text GLabel 7900 4250 0    60   Input ~ 0
 SCL
-Text GLabel 7600 4400 0    60   Input ~ 0
+Text GLabel 7900 4400 0    60   Input ~ 0
 SDA
-Wire Wire Line
-	7950 3650 8150 3650
-Wire Wire Line
-	7100 3650 7300 3650
 Wire Wire Line
 	6150 2450 6150 2250
 Wire Wire Line
@@ -2906,7 +2887,7 @@ $EndComp
 Connection ~ 6150 2050
 Connection ~ 7000 2050
 Wire Wire Line
-	8850 3650 10200 3650
+	8850 3650 9550 3650
 $Comp
 L Device:R R17
 U 1 1 5BB9C2E6
@@ -2941,28 +2922,6 @@ F 3 "~" H 10700 2700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J10
-U 1 1 5BB9DD63
-P 10700 3000
-F 0 "J10" H 10673 2930 50  0000 R CNN
-F 1 "Batt+" H 10673 3021 50  0000 R CNN
-F 2 "Connectors2:1X01" H 10700 3000 50  0001 C CNN
-F 3 "~" H 10700 3000 50  0001 C CNN
-	1    10700 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J11
-U 1 1 5BB9DDCC
-P 10850 3650
-F 0 "J11" H 10823 3580 50  0000 R CNN
-F 1 "Batt-" H 10823 3671 50  0000 R CNN
-F 2 "Connectors2:1X01" H 10850 3650 50  0001 C CNN
-F 3 "~" H 10850 3650 50  0001 C CNN
-	1    10850 3650
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C6
 U 1 1 5BB9E29D
 P 10400 3500
@@ -2975,7 +2934,7 @@ F 3 "~" H 10400 3500 50  0001 C CNN
 $EndComp
 Connection ~ 10400 3650
 Wire Wire Line
-	10400 3650 10650 3650
+	10400 3650 10600 3650
 $Comp
 L Device:C C5
 U 1 1 5BB9E362
@@ -2995,8 +2954,6 @@ Wire Wire Line
 Wire Wire Line
 	10400 2700 10400 2900
 Connection ~ 10400 2900
-Wire Wire Line
-	10500 2800 10500 3000
 $Comp
 L Device:R R16
 U 1 1 5BBA3CF1
@@ -3066,12 +3023,12 @@ $EndComp
 $Comp
 L Device:Thermistor_NTC TH2
 U 1 1 5BBA528E
-P 7950 3400
-F 0 "TH2" H 8047 3446 50  0000 L CNN
-F 1 "NTC" H 8047 3355 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 7950 3450 50  0001 C CNN
-F 3 "~" H 7950 3450 50  0001 C CNN
-	1    7950 3400
+P 8850 4100
+F 0 "TH2" H 8947 4146 50  0000 L CNN
+F 1 "NTC" H 8947 4055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 8850 4150 50  0001 C CNN
+F 3 "~" H 8850 4150 50  0001 C CNN
+	1    8850 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3095,17 +3052,6 @@ F 2 "Jumpers:SMT-JUMPER_2_NO_NO-SILK" H 6550 1700 50  0001 C CNN
 F 3 "~" H 6550 1700 50  0001 C CNN
 	1    6550 1700
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5BBA5979
-P 7450 3650
-F 0 "R11" V 7243 3650 50  0000 C CNN
-F 1 "1m" V 7334 3650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7380 3650 50  0001 C CNN
-F 3 "~" H 7450 3650 50  0001 C CNN
-	1    7450 3650
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R10
@@ -3140,32 +3086,8 @@ F 3 "~" H 7450 3300 50  0001 C CNN
 	1    7450 3300
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R14
-U 1 1 5BBA5F9C
-P 7750 4250
-F 0 "R14" V 7650 4200 50  0000 L CNN
-F 1 "100" V 7750 4200 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 7680 4250 50  0001 C CNN
-F 3 "~" H 7750 4250 50  0001 C CNN
-	1    7750 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5BBA603C
-P 7750 4400
-F 0 "R15" V 7850 4350 50  0000 L CNN
-F 1 "100" V 7750 4350 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 7680 4400 50  0001 C CNN
-F 3 "~" H 7750 4400 50  0001 C CNN
-	1    7750 4400
-	0    1    1    0   
-$EndComp
 Connection ~ 7300 3300
 Connection ~ 7600 3300
-Connection ~ 7600 3650
-Connection ~ 7300 3650
 $Comp
 L Device:Thermistor_NTC TH1
 U 1 1 5BBA73DD
@@ -3248,4 +3170,96 @@ Wire Wire Line
 Connection ~ 7900 2050
 Wire Wire Line
 	7900 2050 8150 2050
+$Comp
+L Connector:Conn_01x03_Male J10
+U 1 1 5BF48585
+P 10800 3100
+F 0 "J10" H 10773 3030 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10773 3121 50  0000 R CNN
+F 2 "CustomFP:molex_78172-0003" H 10800 3100 50  0001 C CNN
+F 3 "~" H 10800 3100 50  0001 C CNN
+	1    10800 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10600 3000 10500 3000
+Wire Wire Line
+	10500 3000 10500 2800
+Wire Wire Line
+	10600 3200 10600 3650
+Wire Wire Line
+	10600 3100 10500 3100
+Wire Wire Line
+	10500 3100 10500 3850
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 5BF51354
+P 8750 3950
+F 0 "JP4" H 8750 4135 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8750 4044 50  0000 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_NO-SILK" H 8750 3950 50  0001 C CNN
+F 3 "~" H 8750 3950 50  0001 C CNN
+	1    8750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4250 9550 4250
+Wire Wire Line
+	9550 4250 9550 3650
+Connection ~ 9550 3650
+Wire Wire Line
+	9550 3650 10200 3650
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 5BF52D7D
+P 8750 3850
+F 0 "JP3" H 8750 4035 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 8750 3944 50  0000 C CNN
+F 2 "Jumpers:SMT-JUMPER_2_NO_NO-SILK" H 8750 3850 50  0001 C CNN
+F 3 "~" H 8750 3850 50  0001 C CNN
+	1    8750 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3850 10500 3850
+Wire Wire Line
+	8650 3850 8650 3950
+Wire Wire Line
+	8650 3850 7950 3850
+Wire Wire Line
+	7950 3850 7950 3200
+Wire Wire Line
+	7950 3200 8350 3200
+Connection ~ 8650 3850
+$Comp
+L CustomComponents:R_0612 U9
+U 1 1 5BF27423
+P 7450 3700
+F 0 "U9" H 7450 3485 50  0000 C CNN
+F 1 "R_0612" H 7450 3576 50  0000 C CNN
+F 2 "Resistor_SMD:R_Shunt_Vishay_WSKW0612" H 7450 3700 50  0001 C CNN
+F 3 "" H 7450 3700 50  0001 C CNN
+	1    7450 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3700 7200 3600
+Wire Wire Line
+	7200 3600 7300 3600
+Wire Wire Line
+	7600 3600 7700 3600
+Wire Wire Line
+	7700 3600 7700 3700
+Wire Wire Line
+	7700 3800 7850 3800
+Wire Wire Line
+	7850 3800 7850 3650
+Wire Wire Line
+	7850 3650 8150 3650
+Connection ~ 8150 3650
+Wire Wire Line
+	7200 3800 7100 3800
+Wire Wire Line
+	7100 3800 7100 3650
+Connection ~ 7100 3650
 $EndSCHEMATC
