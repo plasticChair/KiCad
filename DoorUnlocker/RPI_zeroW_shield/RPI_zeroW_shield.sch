@@ -18,8 +18,8 @@ Text Label 2000 1550 3    50   ~ 0
 5v_IN
 Text Label 6450 4350 2    50   ~ 0
 3V3_IN
-Text Label 3100 1550 3    50   ~ 0
-ServoPWM_P2
+Text Label 2400 1550 3    50   ~ 0
+ServoPWM_P18
 Text Label 3200 1550 3    50   ~ 0
 Relay_P3
 Text Label 3300 1550 3    50   ~ 0
@@ -94,32 +94,10 @@ F 3 "" H 4500 3950 50  0001 C CNN
 	1    4500 3950
 	0    1    1    0   
 $EndComp
-$Comp
-L Relay:SANYOU_SRD_Form_C K1
-U 1 1 5BF58BC0
-P 3600 3950
-F 0 "K1" V 3033 3950 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 3124 3950 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4050 3900 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 3600 3950 50  0001 C CNN
-	1    3600 3950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3900 4050 4500 4050
 Text Label 4500 4150 2    50   ~ 0
-ServoPWM_P2
-$Comp
-L power:GND #PWR04
-U 1 1 5BF58C84
-P 3900 4250
-F 0 "#PWR04" H 3900 4000 50  0001 C CNN
-F 1 "GND" H 3905 4077 50  0000 C CNN
-F 2 "" H 3900 4250 50  0001 C CNN
-F 3 "" H 3900 4250 50  0001 C CNN
-	1    3900 4250
-	1    0    0    -1  
-$EndComp
+ServoPWM_P18
 $Comp
 L Transistor_BJT:BC547 Q1
 U 1 1 5BF58CF5
@@ -206,7 +184,7 @@ Text Notes 1900 3050 0    200  ~ 0
 Servo
 Text Notes 6250 4200 0    100  ~ 0
 Button
-Text Notes 2000 2000 0    100  ~ 0
+Text Notes 2550 1250 0    100  ~ 0
 Inputs
 Text Label 6350 2600 2    50   ~ 0
 3V3_IN
@@ -256,23 +234,12 @@ Reed
 Text Label 6350 2700 2    50   ~ 0
 Reed_P17
 $Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5BF5CF9F
-P 2000 1350
-F 0 "J1" V 2060 1163 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2151 1163 50  0000 R CNN
-F 2 "CustomFP:PinHeader_1x02_P2.54mm_Horizontal" H 2000 1350 50  0001 C CNN
-F 3 "~" H 2000 1350 50  0001 C CNN
-	1    2000 1350
-	0    -1   1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x06_Male J2
 U 1 1 5BF5D2C2
 P 3200 1350
 F 0 "J2" V 3260 963 50  0000 R CNN
 F 1 "Conn_01x06_Male" V 3351 963 50  0000 R CNN
-F 2 "CustomFP:PinHeader_1x06_P2.54mm_Horizontal" H 3200 1350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3200 1350 50  0001 C CNN
 F 3 "~" H 3200 1350 50  0001 C CNN
 	1    3200 1350
 	0    -1   1    0   
@@ -283,6 +250,32 @@ Wire Wire Line
 	4250 3700 4250 3750
 Wire Wire Line
 	4250 3750 3900 3750
-Connection ~ 3900 3750
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5BF51397
+P 2200 1350
+F 0 "J1" V 2260 1063 50  0000 R CNN
+F 1 "Conn_01x05_Male" V 2351 1063 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2200 1350 50  0001 C CNN
+F 3 "~" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	0    -1   1    0   
+$EndComp
 NoConn ~ 2100 1550
+NoConn ~ 2200 1550
+NoConn ~ 2300 1550
+NoConn ~ 3100 1550
+Connection ~ 3900 3750
+$Comp
+L Relay:SANYOU_SRD_Form_C K1
+U 1 1 5BF58BC0
+P 3600 3950
+F 0 "K1" V 3033 3950 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 3124 3950 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4050 3900 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 3600 3950 50  0001 C CNN
+	1    3600 3950
+	0    1    1    0   
+$EndComp
+NoConn ~ 3900 4250
 $EndSCHEMATC

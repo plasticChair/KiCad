@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name PowerSupply)(type KiCad)(uri E:/KiCad/PowerSupply/PowerSupply)(options "")(descr ""))
+  (lib (name CustomPS)(type KiCad)(uri ${KIPRJMOD}/CustomPS.pretty)(options "")(descr ""))
+)
