@@ -1,0 +1,94 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CustomComponents:TPL5111 U1
+U 1 1 5BF60E19
+P 4750 3300
+F 0 "U1" H 5050 3525 50  0000 C CNN
+F 1 "TPL5111" H 5050 3434 50  0000 C CNN
+F 2 "kicad-open-modules:SOT-23-6" H 4750 3300 50  0001 C CNN
+F 3 "" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CustomComponents:Conn_01x02 J1
+U 1 1 5BF610B2
+P 5100 2600
+F 0 "J1" V 5066 2680 50  0000 L CNN
+F 1 "Conn_01x02" V 4975 2680 50  0000 L CNN
+F 2 "CustomFP:PinHeader_1x02_P2.54mm_Horizontal" H 5100 2600 50  0001 C CNN
+F 3 "~" H 5100 2600 50  0001 C CNN
+	1    5100 2600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4350 2800 4350 3400
+Wire Wire Line
+	4350 3400 4650 3400
+$Comp
+L Device:R R1
+U 1 1 5BF6116B
+P 4500 3500
+F 0 "R1" V 4350 3500 50  0000 C CNN
+F 1 "R" V 4500 3500 50  0000 C CNN
+F 2 "Resistors:1206" V 4430 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 3500 4350 3400
+Connection ~ 4350 3400
+$Comp
+L JS_ElectroMechanical:Button SW1
+U 1 1 5BF612B4
+P 4200 3300
+F 0 "SW1" V 4278 3259 60  0000 R CNN
+F 1 "Button" V 4172 3259 60  0000 R CNN
+F 2 "EbayParts:Tact_SMD_Switch" H 4200 3450 60  0001 C CNN
+F 3 "" H 4250 3300 60  0001 C CNN
+	1    4200 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3600 4650 3600
+Wire Wire Line
+	4650 3600 4650 3500
+Connection ~ 4650 3500
+Wire Wire Line
+	4650 3300 4650 2850
+Wire Wire Line
+	4650 2850 5100 2850
+Wire Wire Line
+	5100 2850 5100 2800
+Wire Wire Line
+	4650 2850 4200 2850
+Wire Wire Line
+	4200 2850 4200 2950
+Connection ~ 4650 2850
+Wire Wire Line
+	5450 3300 5450 2850
+Wire Wire Line
+	5450 2850 5100 2850
+Connection ~ 5100 2850
+Wire Wire Line
+	5450 3400 5450 3300
+Connection ~ 5450 3300
+NoConn ~ 5450 3500
+Wire Wire Line
+	4350 2800 5000 2800
+$EndSCHEMATC
