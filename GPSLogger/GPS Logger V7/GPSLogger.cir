@@ -1,0 +1,18 @@
+* C:\Users\Scott\Documents\KiCad\GPSLogger.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 3/13/2017 11:30:03 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  GND ? ? ? ? ? ? ? ? ? ? ? ? ? VCC +3V3 ? ? ? ? ? ? ? ? Net-_U1-Pad25_ Net-_U1-Pad26_ ? ? ? ? ? ? ? ? ? ? ? ? ? Teensy-LC		
+_2  +3V3 GND Net-_U1-Pad26_ Net-_U1-Pad25_ +3V3 +3V3 BME280_Breakout		
+_3  Net-_U1-Pad26_ Net-_U1-Pad25_ GND ? ? +3V3 +3V3 GND ADXL345_Breakout		
+_1  ? ? ? ? ? ? SDCard_Breakout		
+R2  Net-_R1-Pad1_ ? R		
+R1  Net-_R1-Pad1_ ? R		
+C1  +3V3 GND C		
+C2  +3V3 GND C		
+
+.end

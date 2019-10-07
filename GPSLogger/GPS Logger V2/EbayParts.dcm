@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP -BATT
+K POWER, PWR
+$ENDCMP
+#
+$CMP CONN_01X01
+D Connector, single row, 01x01, pin header
+K connector
+$ENDCMP
+#
+#End Doc Library

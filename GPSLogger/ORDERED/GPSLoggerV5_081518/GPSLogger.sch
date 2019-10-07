@@ -1,0 +1,788 @@
+EESchema Schematic File Version 2
+LIBS:GPSLogger-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:teensy
+LIBS:adxl345_breakout
+LIBS:bme280_breakout
+LIBS:conn_01x01
+LIBS:sdcard_breakout
+LIBS:EbayParts
+LIBS:GPSLogger-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +3.3V #PWR01
+U 1 1 58C7C8E4
+P 2650 655
+F 0 "#PWR01" H 2650 505 50  0001 C CNN
+F 1 "+3.3V" H 2650 795 50  0000 C CNN
+F 2 "" H 2650 655 50  0001 C CNN
+F 3 "" H 2650 655 50  0001 C CNN
+	1    2650 655 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 58C7CCD2
+P 2650 805
+F 0 "C1" H 2675 905 50  0000 L CNN
+F 1 "82nF" H 2675 705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2688 655 50  0001 C CNN
+F 3 "" H 2650 805 50  0001 C CNN
+	1    2650 805 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58C7CE8C
+P 2900 805
+F 0 "C2" H 2925 905 50  0000 L CNN
+F 1 "2.2uF" H 2925 705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2938 655 50  0001 C CNN
+F 3 "" H 2900 805 50  0001 C CNN
+	1    2900 805 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58C7CF8F
+P 2650 955
+F 0 "#PWR02" H 2650 705 50  0001 C CNN
+F 1 "GND" H 2650 805 50  0000 C CNN
+F 2 "" H 2650 955 50  0001 C CNN
+F 3 "" H 2650 955 50  0001 C CNN
+	1    2650 955 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR03
+U 1 1 58C7FFA2
+P 2650 955
+F 0 "#PWR03" H 2650 755 50  0001 C CNN
+F 1 "GNDPWR" H 2650 825 50  0000 C CNN
+F 2 "" H 2650 905 50  0001 C CNN
+F 3 "" H 2650 905 50  0001 C CNN
+	1    2650 955 
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDPWR #PWR04
+U 1 1 58C9016C
+P 1395 2610
+F 0 "#PWR04" H 1395 2410 50  0001 C CNN
+F 1 "GNDPWR" H 1490 2460 50  0000 C CNN
+F 2 "" H 1395 2560 50  0001 C CNN
+F 3 "" H 1395 2560 50  0001 C CNN
+	1    1395 2610
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HM-11 U1
+U 1 1 58CB7743
+P 1230 1760
+F 0 "U1" H 1280 2610 60  0000 C CNN
+F 1 "HM-11" H 1780 2610 60  0000 L CNN
+F 2 "EbayParts:HM-11_Breakout" H 1780 2610 60  0001 C CNN
+F 3 "" H 1780 2610 60  0001 C CNN
+	1    1230 1760
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 Batt+1
+U 1 1 58CFC58C
+P 10945 1000
+F 0 "Batt+1" H 10945 1100 50  0000 C CNN
+F 1 "+Batt" V 11045 1000 50  0000 C CNN
+F 2 "EbayParts:Pin_Header_1x01_Pitch2.54mm" H 10945 1000 50  0001 C CNN
+F 3 "" H 10945 1000 50  0001 C CNN
+	1    10945 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 Batt-1
+U 1 1 58CFC7C9
+P 10970 1330
+F 0 "Batt-1" H 10970 1430 50  0000 C CNN
+F 1 "-Batt" V 11070 1330 50  0000 C CNN
+F 2 "EbayParts:Pin_Header_1x01_Pitch2.54mm" H 10970 1330 50  0001 C CNN
+F 3 "" H 10970 1330 50  0001 C CNN
+	1    10970 1330
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR05
+U 1 1 58D01CFB
+P 10770 1330
+F 0 "#PWR05" H 10770 1130 50  0001 C CNN
+F 1 "GNDPWR" H 10770 1200 50  0000 C CNN
+F 2 "" H 10770 1280 50  0001 C CNN
+F 3 "" H 10770 1280 50  0001 C CNN
+	1    10770 1330
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 BattSwitch1
+U 1 1 58D0EFA6
+P 10540 725
+F 0 "BattSwitch1" V 10640 705 50  0000 C CNN
+F 1 "BattSwitch" V 10640 725 50  0001 C CNN
+F 2 "EbayParts:Pin_Header_1x03_Pitch2.54mm" H 10540 725 50  0001 C CNN
+F 3 "" H 10540 725 50  0001 C CNN
+	1    10540 725 
+	0    1    -1   0   
+$EndComp
+$Comp
+L CONN_01X03 BLE_PWR_Switch1
+U 1 1 58D0B2C5
+P 1710 3480
+F 0 "BLE_PWR_Switch1" V 1815 3295 50  0000 C CNN
+F 1 "BLE_PWR_Switch" V 1810 3480 50  0001 C CNN
+F 2 "EbayParts:Pin_Header_1x03_Pitch2.54mm" H 1710 3480 50  0001 C CNN
+F 3 "" H 1710 3480 50  0001 C CNN
+	1    1710 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 58D1E754
+P 10390 1325
+F 0 "R5" H 10420 1345 50  0000 L CNN
+F 1 "100k" H 10420 1285 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10390 1325 50  0001 C CNN
+F 3 "" H 10390 1325 50  0001 C CNN
+	1    10390 1325
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1510 3380
+NoConn ~ 1030 1160
+NoConn ~ 1030 1360
+NoConn ~ 1980 1660
+NoConn ~ 1980 1560
+NoConn ~ 1980 1460
+NoConn ~ 1980 1360
+NoConn ~ 1980 1260
+NoConn ~ 1980 1160
+NoConn ~ 1980 1060
+NoConn ~ 1395 2510
+NoConn ~ 1395 2310
+$Comp
+L MAX8212 MAX1
+U 1 1 58D3E43D
+P 7585 1575
+F 0 "MAX1" H 7830 1510 60  0000 C CNN
+F 1 "MAX8211" H 7810 2055 60  0000 C CNN
+F 2 "EbayParts:SOIC-8-N" H 7770 1575 60  0001 C CNN
+F 3 "" H 7770 1575 60  0001 C CNN
+	1    7585 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR06
+U 1 1 58D405E7
+P 8320 1315
+F 0 "#PWR06" H 8320 1115 50  0001 C CNN
+F 1 "GNDPWR" H 8320 1185 50  0000 C CNN
+F 2 "" H 8320 1265 50  0001 C CNN
+F 3 "" H 8320 1265 50  0001 C CNN
+	1    8320 1315
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 58D4430C
+P 9190 1125
+F 0 "R3" H 9220 1145 50  0000 L CNN
+F 1 "1M" H 9220 1085 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9190 1125 50  0001 C CNN
+F 3 "" H 9190 1125 50  0001 C CNN
+	1    9190 1125
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 58D44E32
+P 7385 1440
+F 0 "R2" H 7415 1460 50  0000 L CNN
+F 1 "56k" H 7415 1400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7385 1440 50  0001 C CNN
+F 3 "" H 7385 1440 50  0001 C CNN
+	1    7385 1440
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 58D45299
+P 7220 1095
+F 0 "R1" H 7250 1115 50  0000 L CNN
+F 1 "100k" H 7250 1055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7220 1095 50  0001 C CNN
+F 3 "" H 7220 1095 50  0001 C CNN
+	1    7220 1095
+	-1   0    0    1   
+$EndComp
+NoConn ~ 10640 925 
+$Comp
+L GNDPWR #PWR07
+U 1 1 58D461BB
+P 7385 1540
+F 0 "#PWR07" H 7385 1340 50  0001 C CNN
+F 1 "GNDPWR" H 7385 1410 50  0000 C CNN
+F 2 "" H 7385 1490 50  0001 C CNN
+F 3 "" H 7385 1490 50  0001 C CNN
+	1    7385 1540
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7385 1240
+NoConn ~ 1395 2410
+$Comp
+L GNDPWR #PWR08
+U 1 1 58D1DD5F
+P 10390 1425
+F 0 "#PWR08" H 10390 1225 50  0001 C CNN
+F 1 "GNDPWR" H 10390 1295 50  0000 C CNN
+F 2 "" H 10390 1375 50  0001 C CNN
+F 3 "" H 10390 1375 50  0001 C CNN
+	1    10390 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR09
+U 1 1 58D178B1
+P 9460 1010
+F 0 "#PWR09" H 9460 860 50  0001 C CNN
+F 1 "+BATT" H 9460 1150 50  0000 C CNN
+F 2 "" H 9460 1010 50  0001 C CNN
+F 3 "" H 9460 1010 50  0001 C CNN
+	1    9460 1010
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 debug_conn1
+U 1 1 58F3CCE9
+P 1385 4675
+F 0 "debug_conn1" V 1530 4680 50  0000 C CNN
+F 1 "debug_conn" V 1485 4675 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 1385 4675 50  0001 C CNN
+F 3 "" H 1385 4675 50  0001 C CNN
+	1    1385 4675
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR010
+U 1 1 590D31CD
+P 1565 5450
+F 0 "#PWR010" H 1565 5250 50  0001 C CNN
+F 1 "GNDPWR" V 1595 5205 50  0000 C CNN
+F 2 "" H 1565 5400 50  0001 C CNN
+F 3 "" H 1565 5400 50  0001 C CNN
+	1    1565 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GY-91 U4
+U 1 1 590E57CD
+P 9265 4940
+F 0 "U4" H 9615 4890 60  0000 C CNN
+F 1 "GY-91" H 9565 5790 60  0000 C CNN
+F 2 "EbayParts:GY-91" H 9715 5840 60  0001 C CNN
+F 3 "" H 9715 5840 60  0001 C CNN
+	1    9265 4940
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR011
+U 1 1 590E7E9F
+P 9065 4690
+F 0 "#PWR011" H 9065 4490 50  0001 C CNN
+F 1 "GNDPWR" H 9005 4570 50  0000 C CNN
+F 2 "" H 9065 4640 50  0001 C CNN
+F 3 "" H 9065 4640 50  0001 C CNN
+	1    9065 4690
+	0    1    -1   0   
+$EndComp
+NoConn ~ 9065 4790
+NoConn ~ 9065 4290
+$Comp
+L D D1
+U 1 1 593B6C57
+P 10485 1075
+F 0 "D1" H 10485 1175 50  0000 C CNN
+F 1 "D" H 10485 975 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" H 10485 1075 50  0001 C CNN
+F 3 "" H 10485 1075 50  0001 C CNN
+	1    10485 1075
+	0    1    1    0   
+$EndComp
+Text Label 9460 2175 0    60   ~ 0
+USBPower+
+Text Label 9315 825  0    60   ~ 0
+BattPostSwitch
+Text Notes 10225 4690 0    60   ~ 0
+BME280 Small\nTop \nVin\nGnd\nSCL\nSCA
+$Comp
+L BLE_module U2
+U 1 1 59558901
+P 1365 5750
+F 0 "U2" H 1470 5675 60  0000 C CNN
+F 1 "BLE_module" H 1375 6400 60  0000 C CNN
+F 2 "EbayParts:HM-10_breakout" H 1365 5750 60  0001 C CNN
+F 3 "" H 1365 5750 60  0001 C CNN
+	1    1365 5750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1565 5250
+NoConn ~ 1565 5750
+$Comp
+L Si6943DQ PwrEnFET1
+U 1 1 58F16A43
+P 9660 1235
+F 0 "PwrEnFET1" H 9935 1530 60  0000 C CNN
+F 1 "Si6943DQ" H 9920 1150 60  0000 C CNN
+F 2 "EbayParts:TSSOP-8_4.4x3mm_Pitch0.65mm_custom" H 9910 1885 60  0001 C CNN
+F 3 "" H 9910 1885 60  0001 C CNN
+	1    9660 1235
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7pinheader GPS_CONN1
+U 1 1 58C8E9D5
+P 1195 2710
+F 0 "GPS_CONN1" H 1245 3445 60  0000 C CNN
+F 1 "GPS Connector" H 1225 2625 60  0000 C CNN
+F 2 "EbayParts:Pin_Header_Angled_1x07_Pitch2.54mm" H 1195 2710 60  0001 C CNN
+F 3 "" H 1195 2710 60  0001 C CNN
+	1    1195 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L BME280 U5
+U 1 1 59566351
+P 9515 3385
+F 0 "U5" H 9480 3280 60  0000 C CNN
+F 1 "BME280" H 9480 3775 60  0000 C CNN
+F 2 "EbayParts:BME280_tiny" H 9515 3385 60  0001 C CNN
+F 3 "" H 9515 3385 60  0001 C CNN
+	1    9515 3385
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR012
+U 1 1 59566577
+P 9315 3585
+F 0 "#PWR012" H 9315 3385 50  0001 C CNN
+F 1 "GNDPWR" V 9310 3325 50  0000 C CNN
+F 2 "" H 9315 3535 50  0001 C CNN
+F 3 "" H 9315 3535 50  0001 C CNN
+	1    9315 3585
+	0    1    -1   0   
+$EndComp
+Text Label 1395 2210 0    60   ~ 0
+GPS_Tx_RX1_P1
+Text Label 1395 2110 0    60   ~ 0
+GPS_Rx_TX1_P0
+Text Label 1565 5550 0    60   ~ 0
+BLE_Tx_RX4_P31
+Text Label 1565 5650 0    60   ~ 0
+BLE_Rx_TX4_P32
+Text Label 8410 4700 0    60   ~ 0
+SDA
+Text Label 8410 4600 0    60   ~ 0
+SCL
+Text Label 5000 2910 2    60   ~ 0
+Screen_DC_P8
+Text Label 5000 3810 2    60   ~ 0
+Screen_SCK_P27
+Text Label 5000 3210 2    60   ~ 0
+Screen_MOSI_P11
+Text Label 5000 2210 2    60   ~ 0
+GPS_Tx_RX1_P1
+Text Label 5000 2110 2    60   ~ 0
+GPS_Rx_TX1_P0
+Text Label 5000 5010 2    60   ~ 0
+Debug_Tx_RX1_P1
+Text Label 5000 4910 2    60   ~ 0
+Debug_Rx_TX1_P0
+$Comp
+L +BATT #PWR013
+U 1 1 5991500A
+P 7220 995
+F 0 "#PWR013" H 7220 845 50  0001 C CNN
+F 1 "+BATT" H 7220 1135 50  0000 C CNN
+F 2 "" H 7220 995 50  0001 C CNN
+F 3 "" H 7220 995 50  0001 C CNN
+	1    7220 995 
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9190 825 
+Wire Wire Line
+	9190 825  9190 1025
+Connection ~ 10485 1225
+Wire Wire Line
+	7220 1340 7220 1195
+Wire Wire Line
+	7220 1340 7385 1340
+Connection ~ 9065 4390
+Wire Wire Line
+	9115 4690 9065 4690
+Wire Wire Line
+	9115 4390 9115 4690
+Wire Wire Line
+	8995 4390 9115 4390
+Wire Wire Line
+	8995 4190 8995 4390
+Wire Wire Line
+	9065 4190 8995 4190
+Wire Wire Line
+	9065 4600 9065 4590
+Wire Wire Line
+	8900 4490 9065 4490
+Wire Wire Line
+	8900 4700 8900 4490
+Wire Wire Line
+	2900 955  2650 955 
+Wire Wire Line
+	9460 1025 9460 1155
+Wire Wire Line
+	10390 1080 10390 1155
+Wire Wire Line
+	10440 1080 10390 1080
+Wire Wire Line
+	10440 925  10440 1080
+Wire Wire Line
+	10390 1225 10550 1225
+Wire Wire Line
+	10550 1225 10550 2175
+Wire Wire Line
+	10540 1000 10540 925 
+Wire Wire Line
+	10745 1000 10540 1000
+Connection ~ 8560 825 
+Wire Wire Line
+	8250 1315 8320 1315
+Wire Wire Line
+	8560 1405 8255 1405
+Wire Wire Line
+	8560 825  8560 1405
+Wire Wire Line
+	7900 4600 9065 4600
+Wire Wire Line
+	2900 655  2650 655 
+Wire Wire Line
+	7900 4700 8900 4700
+Wire Wire Line
+	10390 825  10390 1010
+Wire Wire Line
+	10390 925  10485 925 
+Wire Wire Line
+	8560 825  10390 825 
+Connection ~ 10390 925 
+Connection ~ 10350 825 
+Wire Wire Line
+	8675 4600 8675 3485
+Wire Wire Line
+	8675 3485 9315 3485
+Connection ~ 8675 4600
+Wire Wire Line
+	1395 2710 1585 2710
+Wire Wire Line
+	10550 2175 7320 2175
+Wire Wire Line
+	7900 4800 8150 4800
+Wire Wire Line
+	8250 1225 9460 1225
+Connection ~ 9190 1225
+Wire Wire Line
+	9190 1025 9460 1025
+Connection ~ 9460 1080
+Wire Wire Line
+	10350 825  10355 825 
+Wire Wire Line
+	10155 2210 10155 2170
+Wire Wire Line
+	10155 2170 10150 2170
+Connection ~ 10150 2170
+$Comp
+L R_Small R4
+U 1 1 599DE8C5
+P 10155 2310
+F 0 "R4" H 10185 2330 50  0000 L CNN
+F 1 "100k" H 10185 2270 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10155 2310 50  0001 C CNN
+F 3 "" H 10155 2310 50  0001 C CNN
+	1    10155 2310
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR014
+U 1 1 599DE8CB
+P 10155 2410
+F 0 "#PWR014" H 10155 2210 50  0001 C CNN
+F 1 "GNDPWR" H 10155 2280 50  0000 C CNN
+F 2 "" H 10155 2360 50  0001 C CNN
+F 3 "" H 10155 2360 50  0001 C CNN
+	1    10155 2410
+	1    0    0    -1  
+$EndComp
+Text Label 5000 3110 2    60   ~ 0
+Screen_CS_P10
+Text Label 5000 3310 2    60   ~ 0
+Screen_MISO_P12
+Text Label 5000 3710 2    60   ~ 0
+WAKE_UP_PIN
+Wire Wire Line
+	8150 4890 9065 4890
+Wire Wire Line
+	8150 4800 8150 4890
+$Comp
+L +BATT #PWR015
+U 1 1 59EB9E74
+P 1510 3580
+F 0 "#PWR015" H 1510 3430 50  0001 C CNN
+F 1 "+BATT" H 1510 3720 50  0000 C CNN
+F 2 "" H 1510 3580 50  0001 C CNN
+F 3 "" H 1510 3580 50  0001 C CNN
+	1    1510 3580
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9315 3685 8740 3685
+Wire Wire Line
+	8740 3685 8735 4890
+Connection ~ 8735 4890
+$Comp
+L GNDPWR #PWR016
+U 1 1 59FD53B5
+P 5000 2010
+F 0 "#PWR016" H 5000 1810 50  0001 C CNN
+F 1 "GNDPWR" H 5000 1880 50  0000 C CNN
+F 2 "" H 5000 1960 50  0001 C CNN
+F 3 "" H 5000 1960 50  0001 C CNN
+	1    5000 2010
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8605 3385 9315 3385
+Wire Wire Line
+	8605 3385 8605 4700
+Connection ~ 8605 4700
+Text Label 1585 4775 0    60   ~ 0
+Debug_Tx_RX1_P1
+Text Label 1585 4675 0    60   ~ 0
+Debug_Rx_TX1_P0
+$Comp
+L GNDPWR #PWR017
+U 1 1 59FE9290
+P 1585 4575
+F 0 "#PWR017" H 1585 4375 50  0001 C CNN
+F 1 "GNDPWR" H 1585 4445 50  0000 C CNN
+F 2 "" H 1585 4525 50  0001 C CNN
+F 3 "" H 1585 4525 50  0001 C CNN
+	1    1585 4575
+	1    0    0    1   
+$EndComp
+$Comp
+L Teensy3.6 U3
+U 1 1 5AC3114E
+P 6000 4110
+F 0 "U3" H 6000 6410 60  0000 C CNN
+F 1 "Teensy3.6" H 6000 1810 60  0000 C CNN
+F 2 "CustomFP:Teensy35_36" H 6000 4110 60  0001 C CNN
+F 3 "" H 6000 4110 60  0000 C CNN
+	1    6000 4110
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 850  6640 1330 900 
+U 5AC349CD
+F0 "Button and LEDs" 60
+F1 "file5AC349CC.sch" 60
+$EndSheet
+Text Label 5000 4210 2    60   ~ 0
+BLE_Tx_RX4_P31
+Text Label 5000 4310 2    60   ~ 0
+BLE_Rx_TX4_P32
+Text Label 7000 6110 0    60   ~ 0
+I2c_SDA_P18
+Text Label 7000 6010 0    60   ~ 0
+I2c_SCL_P19
+Text Label 7900 4600 2    60   ~ 0
+I2c_SCL_P19
+Text Label 7900 4700 2    60   ~ 0
+I2c_SDA_P18
+Text GLabel 5000 2310 0    60   Input ~ 0
+LED1_P2
+Text GLabel 5000 2410 0    60   Input ~ 0
+LED2_P3
+Text GLabel 5000 2510 0    60   Input ~ 0
+LED3_P4
+Text GLabel 5000 2610 0    60   Input ~ 0
+LED4_P5
+Text GLabel 1585 2710 2    60   Input ~ 0
+GPS_Pwr
+Text Label 1565 5350 0    60   ~ 0
+BLE_Pwr
+Text Label 1510 3480 2    60   ~ 0
+BLE_Pwr
+Text GLabel 5000 5110 0    60   Input ~ 0
+Batt_Mon_P35
+NoConn ~ 5000 4010
+NoConn ~ 5000 4410
+NoConn ~ 5000 4510
+NoConn ~ 5000 4610
+NoConn ~ 5000 4710
+NoConn ~ 5000 4810
+NoConn ~ 5000 5210
+NoConn ~ 5000 5310
+NoConn ~ 5000 5410
+NoConn ~ 5000 5510
+NoConn ~ 5000 5710
+NoConn ~ 5000 5610
+NoConn ~ 5000 5910
+NoConn ~ 5000 6210
+NoConn ~ 5000 6110
+NoConn ~ 5000 6010
+NoConn ~ 7000 6210
+NoConn ~ 7000 5410
+NoConn ~ 7000 5110
+NoConn ~ 7000 5010
+NoConn ~ 7000 4910
+NoConn ~ 7000 4810
+NoConn ~ 7000 4710
+NoConn ~ 7000 4610
+NoConn ~ 7000 4410
+NoConn ~ 7000 4310
+NoConn ~ 7000 4210
+NoConn ~ 7000 4110
+NoConn ~ 7000 4010
+NoConn ~ 7000 3910
+NoConn ~ 7000 3810
+NoConn ~ 7000 3710
+NoConn ~ 7000 3310
+NoConn ~ 7000 3410
+NoConn ~ 7000 3510
+NoConn ~ 7000 3610
+NoConn ~ 7000 2010
+NoConn ~ 7000 2110
+NoConn ~ 7000 2210
+NoConn ~ 7000 2310
+NoConn ~ 7000 2410
+NoConn ~ 7000 2510
+NoConn ~ 7000 2610
+NoConn ~ 7000 2710
+NoConn ~ 7000 2810
+NoConn ~ 7000 2910
+NoConn ~ 7000 3010
+$Comp
+L +3.3V #PWR019
+U 1 1 5AC54F21
+P 5000 3410
+F 0 "#PWR019" H 5000 3260 50  0001 C CNN
+F 1 "+3.3V" V 4995 3645 50  0000 C CNN
+F 2 "" H 5000 3410 50  0001 C CNN
+F 3 "" H 5000 3410 50  0001 C CNN
+	1    5000 3410
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7000 3110
+NoConn ~ 7000 3210
+NoConn ~ 7000 4510
+$Comp
+L +3.3V #PWR020
+U 1 1 5AC56D70
+P 7000 5510
+F 0 "#PWR020" H 7000 5360 50  0001 C CNN
+F 1 "+3.3V" V 6995 5745 50  0000 C CNN
+F 2 "" H 7000 5510 50  0001 C CNN
+F 3 "" H 7000 5510 50  0001 C CNN
+	1    7000 5510
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDPWR #PWR021
+U 1 1 5AC5706F
+P 5000 5810
+F 0 "#PWR021" H 5000 5610 50  0001 C CNN
+F 1 "GNDPWR" H 4940 5690 50  0000 C CNN
+F 2 "" H 5000 5760 50  0001 C CNN
+F 3 "" H 5000 5760 50  0001 C CNN
+	1    5000 5810
+	0    1    -1   0   
+$EndComp
+Text GLabel 5000 3910 0    60   Input ~ 0
+GPS_Pwr_En_P28
+Wire Wire Line
+	7000 5210 7315 5210
+Connection ~ 7315 5210
+Wire Wire Line
+	7315 5210 7320 2175
+Text GLabel 7000 5610 2    60   Input ~ 0
+Fun_Btn_1_P23
+Text GLabel 7000 5710 2    60   Input ~ 0
+Fun_Btn_2_P22
+Text GLabel 7000 5810 2    60   Input ~ 0
+Fun_Btn_3_P21
+Text GLabel 7000 5910 2    60   Input ~ 0
+Batt_Mon_En_P20
+$Comp
+L +BATT #PWR022
+U 1 1 5AC5A891
+P 7000 5310
+F 0 "#PWR022" H 7000 5160 50  0001 C CNN
+F 1 "+BATT" H 7000 5450 50  0000 C CNN
+F 2 "" H 7000 5310 50  0001 C CNN
+F 3 "" H 7000 5310 50  0001 C CNN
+	1    7000 5310
+	0    1    -1   0   
+$EndComp
+NoConn ~ 5000 4110
+NoConn ~ 1230 1710
+Text Label 5000 2710 2    60   ~ 0
+Screen_RST_P6
+Text Label 5000 2810 2    60   ~ 0
+Screen_BUSY_P7
+NoConn ~ 5000 3010
+Text Label 7900 4800 2    60   ~ 0
+Sensor_PWR_P25
+Text Label 5000 3610 2    60   ~ 0
+Sensor_PWR_P25
+$EndSCHEMATC

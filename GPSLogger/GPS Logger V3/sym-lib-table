@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name GPSLogger-rescue)(type Legacy)(uri ${KIPRJMOD}/GPSLogger-rescue.lib)(options "")(descr ""))
+  (lib (name teensy1)(type Legacy)(uri ${KIPRJMOD}/teensy.lib)(options "")(descr ""))
+  (lib (name EbayParts1)(type Legacy)(uri ${KIPRJMOD}/EbayParts.lib)(options "")(descr ""))
+)
